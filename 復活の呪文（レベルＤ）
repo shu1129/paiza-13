@@ -1,0 +1,17 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+int main(void){
+  std::string s1;
+  std::string s2;
+  std::getline(std::cin, s1);
+  std::getline(std::cin, s2);
+
+    if( s1 == s2 ){
+    cout << "OK";
+  }
+  else{
+    cout << "NG";
+  }
+}
