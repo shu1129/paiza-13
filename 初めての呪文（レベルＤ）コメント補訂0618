@@ -1,0 +1,46 @@
+#include <iostream>
+#include <string>
+
+/*
+iostream
+・c++の標準入出力ライブラリー
+https://docs.oracle.com/cd/E19957-01/805-7889/6j7duaiiq/index.html
+
+＃include<挿入するファイルのパス>
+指定されたファイルを読み込む
+http://dic.nicovideo.jp/a/include
+*/
+
+int main() {
+  std::string s;
+  if (std::getline(std::cin, s)) {
+    std::cout << s << std::endl;
+  }
+}
+
+/*
+std::string
+・c++で標準に使用できる便利な文字クラスタ
+・include<string>を記述することで使用可能になる
+・std::string ○○;
+で○○をstring型のオブジェクトと定義
+http://vivi.dyndns.org/tech/cpp/string.html
+
+getline
+・ストリームから改行文字が現れるまで（一行すべて）入力する
+https://cpprefjp.github.io/reference/string/basic_string/getline.html
+
+endl
+・改行文字の出力後にフラッシュ処理
+http://d.hatena.ne.jp/yohhoy/20120124/p1
+・endlは特殊な変数で改行の効果を持つ
+http://pprog.blog.jp/archives/3808875.html
+
+  フラッシュ
+  バッファーにたまっているものを放出する
+  http://www5c.biglobe.ne.jp/~ecb/cpp/02_01.html
+
+cout
+cout << “  “;でダブルクォート”内の文字はそのまま表示される
+http://next1.msi.sk.shibaura-it.ac.jp/MULTIMEDIA/CPP/chap1.html
+*/
