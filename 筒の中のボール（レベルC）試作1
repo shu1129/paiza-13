@@ -16,12 +16,14 @@ std::vector<std::string> split(const std::string& input, char delimiter)
     return result;
 }
 
+
 int main(void){
   std::string N;
   std::string s2;
   std::getline(std::cin, N);
   std::getline(std::cin, s2);
 
-  split(s2,'')
-  std::cout << s2 << std::endl;
+  for (const std::string& s2 : split(s2, 'R')) {
+      std::cout << s2 << std::endl;
+  }
 }
