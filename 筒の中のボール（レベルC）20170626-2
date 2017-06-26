@@ -1,0 +1,36 @@
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <string.h>
+#include <sstream>
+#include <vector>
+
+std::vector<std::string> split(const std::string& input, char delimiter)
+{
+    std::istringstream stream(input);
+
+    std::string field;
+    std::vector<std::string> result;
+    while (std::getline(stream, field, delimiter)) {
+        result.push_back(field);
+    }
+    return result;
+}
+
+
+int main(void){
+  std::string N;
+  std::string s2;
+  int s3;
+  std::getline(std::cin, N);
+  std::getline(std::cin, s2);
+
+  for (const std::string& s2 : split(s2, 'R')) {
+    int len;
+    const char* s2 = s2.c_str();
+    len = strlen(s2);
+    for(int i = 0; i < len; i++ )
+    s3 = i * 10 ^ (i-1);
+    std::cout << s3 << std::endl;
+  }
+}

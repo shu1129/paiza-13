@@ -1,0 +1,60 @@
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <sstream>
+#include <vector>
+#include <cstdlib>
+#include <typeinfo>
+
+std::vector<std::string> split(const std::string& input, char delimiter)
+{
+    std::istringstream stream(input);
+
+    std::string field;
+    std::vector<std::string> result;
+    while (std::getline(stream, field, delimiter)) {
+        result.push_back(field);
+    }
+    return result;
+}
+
+
+int main(void){
+  std::string N;
+  std::string s2;
+  std::getline(std::cin, N);
+
+  auto num = std::atoi(N.c_str());
+  std::cout << num << std::endl;
+
+  while( std::cin >> s2 ){
+    if (s2 == 'L') {
+      std::cout << s2 << std::endl;
+    } else {
+
+    }
+
+
+
+
+  /*
+  for (int i = 0; i < N2; i++) {
+    int s3[i] = s2;
+    std::cout << s3[i] << std::endl;
+  }
+  */
+
+  /*
+  while (std::getline(std::cin, s2)) {
+    int s3[] = {};
+    s3[] = s2;
+    std::cout << s3 << std::endl;
+  }
+  */
+
+}
+
+/*
+文字列を数字に変える方法まとめ
+http://nekko1119.hatenablog.com/entry/2013/08/17/144722
+*/
