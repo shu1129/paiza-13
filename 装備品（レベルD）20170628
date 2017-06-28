@@ -1,0 +1,28 @@
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <string.h>
+#include <sstream>
+#include <vector>
+#include <math.h>
+
+int main(){
+    double a1 = 0;
+    double c1 = 0;
+    double a2 = 0;
+    double c2 = 0;
+    std::cin >> a1;
+    std::cin >> c1;
+    std::cin >> a2;
+    std::cin >> c2;
+
+    double cosp1 = a1/c1;
+    double cosp2 = a2/c2;
+
+
+    if (cosp1 >= cosp2) {
+      std::cout << c1 << std::endl;
+    } else {
+      std::cout << c2 << std::endl;
+    }
+}

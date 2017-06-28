@@ -10,10 +10,11 @@ int main() {
   std::string s;
   int P;
   while (std::getline(std::cin, s)) {
-    if (s == 'Attack') {
-      P = P +100;
+    if (s == "Attack") {
+      P = P + 100;
     }else{
+
     }
   }
-  return 0;
+  std::cout << P << std::endl;
 }
