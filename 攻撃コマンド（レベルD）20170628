@@ -1,0 +1,19 @@
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <string.h>
+#include <sstream>
+#include <vector>
+#include <math.h>
+
+int main() {
+  std::string s;
+  int P;
+  while (std::getline(std::cin, s)) {
+    if (s == 'Attack') {
+      P = P +100;
+    }else{
+    }
+  }
+  return 0;
+}
