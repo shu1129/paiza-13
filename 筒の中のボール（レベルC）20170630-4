@@ -1,0 +1,44 @@
+//10回目以降を考慮に入れてなかった？
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <string.h>
+#include <sstream>
+#include <vector>
+#include <math.h>
+
+int main(void){
+  int N;
+  std::string s2("");
+  std::string L("L");
+  std::string R("R");
+
+  std::cin >> N;
+  std::cin >> s2;
+
+  int P = 0;
+
+  for ( int i = 0; i < N; i++) {
+    //s2[i]はstring型ではない
+    if ( s2[i] == 'L') {
+      int a = pow(10,i);
+      P = P + a*(i+1);
+    }else{
+      P = P*10 + i + 1;
+  }
+  }
+
+  std::string b;
+  std::string P2 = std::to_string(P);
+  std::string e;
+  e = P2[0];
+  int c = std::stoi(e);
+
+  std::cout << c;
+
+  for (int i = 1; i < N; i++) {
+    b = P2[i];
+    int d = std::stoi(b);
+    std::cout << " " << d;
+  }
+}

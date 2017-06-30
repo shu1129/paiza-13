@@ -1,0 +1,31 @@
+#include <iostream>
+#include <stdio.h>
+#include <string>
+#include <string.h>
+#include <sstream>
+#include <vector>
+#include <math.h>
+
+int main(){
+  int S;
+  std::cin >> N;
+  int HP;
+  std::cin >> HP;
+  int Dline;
+  std::cin >> Dline;
+  int RP;
+  std::cin >> RP;
+
+  int D;
+
+  for (int i = 0; i < N; i++) {
+    std::cin >> D;
+    HP = HP + D;
+    if (HP <= Dline and D < 0) {
+      HP = HP + RP;
+    } else {
+    }
+  }
+  std::cout << HP << std::endl;
+
+}
